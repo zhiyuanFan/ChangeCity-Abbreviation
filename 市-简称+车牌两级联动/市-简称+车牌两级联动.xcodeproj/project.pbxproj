@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B323CB435FFAA4AD615F87CF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F23586C15FA634565F2B394F /* libPods.a */; };
+		DAA6C1331CA4412100B575AC /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA6C12E1CA4412100B575AC /* CityViewController.m */; settings = {ASSET_TAGS = (); }; };
+		DAA6C1341CA4412100B575AC /* ProvinceCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA6C1301CA4412100B575AC /* ProvinceCityViewController.m */; settings = {ASSET_TAGS = (); }; };
+		DAA6C1351CA4412100B575AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA6C1321CA4412100B575AC /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
+		DAA6C1391CA4412C00B575AC /* ProvinceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA6C1381CA4412C00B575AC /* ProvinceItem.m */; settings = {ASSET_TAGS = (); }; };
+		DAA6C13D1CA4413700B575AC /* DBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA6C13C1CA4413700B575AC /* DBTool.m */; settings = {ASSET_TAGS = (); }; };
+		DAC037011CA3CA3500AC6A6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC037001CA3CA3500AC6A6B /* main.m */; };
+		DAC037041CA3CA3500AC6A6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC037031CA3CA3500AC6A6B /* AppDelegate.m */; };
+		DAC0370A1CA3CA3500AC6A6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC037081CA3CA3500AC6A6B /* Main.storyboard */; };
+		DAC0370C1CA3CA3500AC6A6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC0370B1CA3CA3500AC6A6B /* Assets.xcassets */; };
+		DAC0370F1CA3CA3500AC6A6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC0370D1CA3CA3500AC6A6B /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2949B5B79E75A27D81A444A1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		74A1B8A23E2FA0AA234C3FC2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		DAA6C12D1CA4412100B575AC /* CityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityViewController.h; sourceTree = "<group>"; };
+		DAA6C12E1CA4412100B575AC /* CityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityViewController.m; sourceTree = "<group>"; };
+		DAA6C12F1CA4412100B575AC /* ProvinceCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvinceCityViewController.h; sourceTree = "<group>"; };
+		DAA6C1301CA4412100B575AC /* ProvinceCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvinceCityViewController.m; sourceTree = "<group>"; };
+		DAA6C1311CA4412100B575AC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DAA6C1321CA4412100B575AC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DAA6C1371CA4412C00B575AC /* ProvinceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvinceItem.h; sourceTree = "<group>"; };
+		DAA6C1381CA4412C00B575AC /* ProvinceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvinceItem.m; sourceTree = "<group>"; };
+		DAA6C13B1CA4413700B575AC /* DBTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBTool.h; sourceTree = "<group>"; };
+		DAA6C13C1CA4413700B575AC /* DBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBTool.m; sourceTree = "<group>"; };
+		DAC036FC1CA3CA3500AC6A6B /* 市-简称+车牌两级联动.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "市-简称+车牌两级联动.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC037001CA3CA3500AC6A6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAC037021CA3CA3500AC6A6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DAC037031CA3CA3500AC6A6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DAC037091CA3CA3500AC6A6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAC0370B1CA3CA3500AC6A6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAC0370E1CA3CA3500AC6A6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAC037101CA3CA3500AC6A6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F23586C15FA634565F2B394F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAC036F91CA3CA3500AC6A6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B323CB435FFAA4AD615F87CF /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A090C86818C81C76F05042F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F23586C15FA634565F2B394F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B32096B2213ED5827587AC5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74A1B8A23E2FA0AA234C3FC2 /* Pods.debug.xcconfig */,
+				2949B5B79E75A27D81A444A1 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DAA6C12C1CA4412100B575AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DAA6C12D1CA4412100B575AC /* CityViewController.h */,
+				DAA6C12E1CA4412100B575AC /* CityViewController.m */,
+				DAA6C12F1CA4412100B575AC /* ProvinceCityViewController.h */,
+				DAA6C1301CA4412100B575AC /* ProvinceCityViewController.m */,
+				DAA6C1311CA4412100B575AC /* ViewController.h */,
+				DAA6C1321CA4412100B575AC /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DAA6C1361CA4412C00B575AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DAA6C1371CA4412C00B575AC /* ProvinceItem.h */,
+				DAA6C1381CA4412C00B575AC /* ProvinceItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DAA6C13A1CA4413700B575AC /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				DAA6C13B1CA4413700B575AC /* DBTool.h */,
+				DAA6C13C1CA4413700B575AC /* DBTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		DAC036F31CA3CA3500AC6A6B = {
+			isa = PBXGroup;
+			children = (
+				DAC036FE1CA3CA3500AC6A6B /* 市-简称+车牌两级联动 */,
+				DAC036FD1CA3CA3500AC6A6B /* Products */,
+				B32096B2213ED5827587AC5E /* Pods */,
+				A090C86818C81C76F05042F1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DAC036FD1CA3CA3500AC6A6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAC036FC1CA3CA3500AC6A6B /* 市-简称+车牌两级联动.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAC036FE1CA3CA3500AC6A6B /* 市-简称+车牌两级联动 */ = {
+			isa = PBXGroup;
+			children = (
+				DAA6C13A1CA4413700B575AC /* Tool */,
+				DAA6C1361CA4412C00B575AC /* Model */,
+				DAA6C12C1CA4412100B575AC /* Controller */,
+				DAC037021CA3CA3500AC6A6B /* AppDelegate.h */,
+				DAC037031CA3CA3500AC6A6B /* AppDelegate.m */,
+				DAC037081CA3CA3500AC6A6B /* Main.storyboard */,
+				DAC0370B1CA3CA3500AC6A6B /* Assets.xcassets */,
+				DAC0370D1CA3CA3500AC6A6B /* LaunchScreen.storyboard */,
+				DAC037101CA3CA3500AC6A6B /* Info.plist */,
+				DAC036FF1CA3CA3500AC6A6B /* Supporting Files */,
+			);
+			path = "市-简称+车牌两级联动";
+			sourceTree = "<group>";
+		};
+		DAC036FF1CA3CA3500AC6A6B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAC037001CA3CA3500AC6A6B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAC036FB1CA3CA3500AC6A6B /* 市-简称+车牌两级联动 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC037131CA3CA3500AC6A6B /* Build configuration list for PBXNativeTarget "市-简称+车牌两级联动" */;
+			buildPhases = (
+				C4DA343FFF031D3FFE838360 /* Check Pods Manifest.lock */,
+				DAC036F81CA3CA3500AC6A6B /* Sources */,
+				DAC036F91CA3CA3500AC6A6B /* Frameworks */,
+				DAC036FA1CA3CA3500AC6A6B /* Resources */,
+				AC1669807117E8004111B671 /* Embed Pods Frameworks */,
+				A724058C32F7BB965094FE12 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "市-简称+车牌两级联动";
+			productName = "市-简称+车牌两级联动";
+			productReference = DAC036FC1CA3CA3500AC6A6B /* 市-简称+车牌两级联动.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAC036F41CA3CA3500AC6A6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = fzy;
+				TargetAttributes = {
+					DAC036FB1CA3CA3500AC6A6B = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = TVNZA2SKF6;
+					};
+				};
+			};
+			buildConfigurationList = DAC036F71CA3CA3500AC6A6B /* Build configuration list for PBXProject "市-简称+车牌两级联动" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAC036F31CA3CA3500AC6A6B;
+			productRefGroup = DAC036FD1CA3CA3500AC6A6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAC036FB1CA3CA3500AC6A6B /* 市-简称+车牌两级联动 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAC036FA1CA3CA3500AC6A6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC0370F1CA3CA3500AC6A6B /* LaunchScreen.storyboard in Resources */,
+				DAC0370C1CA3CA3500AC6A6B /* Assets.xcassets in Resources */,
+				DAC0370A1CA3CA3500AC6A6B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A724058C32F7BB965094FE12 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC1669807117E8004111B671 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4DA343FFF031D3FFE838360 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAC036F81CA3CA3500AC6A6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA6C1391CA4412C00B575AC /* ProvinceItem.m in Sources */,
+				DAA6C1331CA4412100B575AC /* CityViewController.m in Sources */,
+				DAA6C1341CA4412100B575AC /* ProvinceCityViewController.m in Sources */,
+				DAA6C13D1CA4413700B575AC /* DBTool.m in Sources */,
+				DAC037041CA3CA3500AC6A6B /* AppDelegate.m in Sources */,
+				DAC037011CA3CA3500AC6A6B /* main.m in Sources */,
+				DAA6C1351CA4412100B575AC /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DAC037081CA3CA3500AC6A6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAC037091CA3CA3500AC6A6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAC0370D1CA3CA3500AC6A6B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAC0370E1CA3CA3500AC6A6B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAC037111CA3CA3500AC6A6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DAC037121CA3CA3500AC6A6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAC037141CA3CA3500AC6A6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74A1B8A23E2FA0AA234C3FC2 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "市-简称+车牌两级联动/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fzy.-----------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DAC037151CA3CA3500AC6A6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2949B5B79E75A27D81A444A1 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "市-简称+车牌两级联动/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fzy.-----------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAC036F71CA3CA3500AC6A6B /* Build configuration list for PBXProject "市-简称+车牌两级联动" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC037111CA3CA3500AC6A6B /* Debug */,
+				DAC037121CA3CA3500AC6A6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC037131CA3CA3500AC6A6B /* Build configuration list for PBXNativeTarget "市-简称+车牌两级联动" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC037141CA3CA3500AC6A6B /* Debug */,
+				DAC037151CA3CA3500AC6A6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAC036F41CA3CA3500AC6A6B /* Project object */;
+}
