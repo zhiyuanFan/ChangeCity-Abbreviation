@@ -26,7 +26,7 @@
 {
     if (!_provinceArr) {
         DBTool *dbTool = [[DBTool alloc] init];
-        NSArray *provinceArr = [dbTool getProvinceData];
+        NSArray *provinceArr = [dbTool getProvinceList];
         _provinceArr = [NSArray arrayWithArray:provinceArr];
     }
     return _provinceArr;

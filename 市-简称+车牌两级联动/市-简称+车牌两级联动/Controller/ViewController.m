@@ -20,6 +20,7 @@ static CGFloat const rgbColor = 239 / 255.0;
 @property (weak, nonatomic) IBOutlet UIView *numView;
 @property (weak, nonatomic) IBOutlet UIButton *cityBtn;
 @property (weak, nonatomic) IBOutlet UILabel *abbreviationLabel;
+@property (weak, nonatomic) IBOutlet UITextField *cityField;
 
 @end
 
@@ -50,9 +51,10 @@ static CGFloat const rgbColor = 239 / 255.0;
     //根据通知传回来的数据,修改界面
     NSDictionary *dic = [note valueForKey:@"userInfo"];
     
-    [self.cityBtn setTitle:dic[@"cityName"] forState:UIControlStateNormal];
-    [self.cityBtn setTitle:dic[@"cityName"] forState:UIControlStateHighlighted];
-    self.abbreviationLabel.text = dic[@"abbreviation"];
+    [self.cityBtn setTitle:dic[@"provinceName"] forState:UIControlStateNormal];
+    [self.cityBtn setTitle:dic[@"provinceName"] forState:UIControlStateHighlighted];
+    self.abbreviationLabel.text = dic[@"Abbreviation"];
+    self.cityField.text = dic[@"cityName"];
 }
 
 - (void)dealloc

@@ -15,19 +15,24 @@
  *
  *  @return 省份模型数组
  */
-- (NSArray *)getProvinceData;
+- (NSArray *)getProvinceList;
 
+/**
+ *  根据省份id获得省份详情
+ *
+ */
+- (NSDictionary *)getProvinceDetailWithProvinceID:(NSString *)ProvinceID;
 
 /**
  *  根据省份ID获取城市数据
  */
-- (NSArray *)getCityDataWithProvinceID:(NSString *)ProvinceID;
+- (NSArray *)getCityListWithProvinceID:(NSString *)ProvinceID;
 
 
-/**
- *  根据省份ID获取省份简称
- *
- */
-- (NSString *)getAbbreviationWihtProvinceID:(NSString *)ProvinceID;
+///**
+// *  根据省份ID获取省份简称
+// *
+// */
+//- (NSString *)getAbbreviationWihtProvinceID:(NSString *)ProvinceID;
 
 @end

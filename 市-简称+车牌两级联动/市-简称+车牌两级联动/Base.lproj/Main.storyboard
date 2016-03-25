@@ -102,6 +102,7 @@
                     <connections>
                         <outlet property="abbreviationLabel" destination="fT5-b0-Mte" id="wa7-Os-slP"/>
                         <outlet property="cityBtn" destination="zOh-Nx-dJ2" id="N5F-aA-RSo"/>
+                        <outlet property="cityField" destination="tzK-OO-J9y" id="0mJ-ks-qC1"/>
                         <outlet property="cityView" destination="kbG-Vd-Jzs" id="FVX-Tk-hl1"/>
                         <outlet property="numView" destination="Z2p-IN-eqh" id="lWo-01-0rX"/>
                     </connections>

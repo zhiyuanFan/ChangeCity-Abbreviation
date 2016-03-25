@@ -41,7 +41,7 @@ static FMDatabaseQueue *_queue;
     }];
 }
 
-- (NSArray *)getProvinceData
+- (NSArray *)getProvinceList
 {
     __block  NSMutableArray *provinceArr = [NSMutableArray array];
     [_queue inDatabase:^(FMDatabase *db) {
@@ -58,7 +58,21 @@ static FMDatabaseQueue *_queue;
     return provinceArr;
 }
 
-- (NSArray *)getCityDataWithProvinceID:(NSString *)ProvinceID
+- (NSDictionary *)getProvinceDetailWithProvinceID:(NSString *)ProvinceID
+{
+    __block NSMutableDictionary *provinceDic = [NSMutableDictionary dictionary];
+    [_queue inDatabase:^(FMDatabase *db) {
+        FMResultSet *set = [db executeQuery:@"select * from Province where ProvinceID = ?",ProvinceID];
+        while (set.next) {
+            provinceDic[@"provinceName"] = [set stringForColumn:@"Name"];
+            provinceDic[@"Abbreviation"] = [set stringForColumn:@"Abbreviation"];
+        }
+    }];
+    return provinceDic;
+
+}
+
+- (NSArray *)getCityListWithProvinceID:(NSString *)ProvinceID
 {
     __block NSMutableArray *cityArr = [NSMutableArray array];
     [_queue inDatabase:^(FMDatabase *db) {
@@ -70,17 +84,17 @@ static FMDatabaseQueue *_queue;
     return cityArr;
 }
 
-- (NSString *)getAbbreviationWihtProvinceID:(NSString *)ProvinceID
-{
-    __block NSString *abbreviation = nil;
-    [_queue inDatabase:^(FMDatabase *db) {
-        FMResultSet *set = [db executeQuery:@"select Abbreviation from Province where ProvinceID = ?",ProvinceID];
-        while (set.next) {
-            abbreviation = [set stringForColumn:@"Abbreviation"];
-        }
-    }];
-    return abbreviation;
-}
+//- (NSString *)getAbbreviationWihtProvinceID:(NSString *)ProvinceID
+//{
+//    __block NSString *abbreviation = nil;
+//    [_queue inDatabase:^(FMDatabase *db) {
+//        FMResultSet *set = [db executeQuery:@"select Abbreviation from Province where ProvinceID = ?",ProvinceID];
+//        while (set.next) {
+//            abbreviation = [set stringForColumn:@"Abbreviation"];
+//        }
+//    }];
+//    return abbreviation;
+//}
 
 
 

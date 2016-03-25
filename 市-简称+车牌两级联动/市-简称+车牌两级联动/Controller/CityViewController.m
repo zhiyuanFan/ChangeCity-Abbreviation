@@ -23,7 +23,7 @@
 {
     if (!_cityArr) {
         DBTool *dbTool = [[DBTool alloc] init];
-        _cityArr = [dbTool getCityDataWithProvinceID:self.ProvinceID];
+        _cityArr = [dbTool getCityListWithProvinceID:self.ProvinceID];
     }
     return _cityArr;
 }
@@ -53,12 +53,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *abbreviation = [[[DBTool alloc] init] getAbbreviationWihtProvinceID:self.ProvinceID];
+    NSDictionary *provinceDic = [[[DBTool alloc] init] getProvinceDetailWithProvinceID:self.ProvinceID];
+    
     NSString *cityName = self.cityArr[indexPath.row];
     
-    NSDictionary *dic = @{@"abbreviation":abbreviation, @"cityName" : cityName};
+    NSMutableDictionary *noteDic = [NSMutableDictionary dictionaryWithDictionary:provinceDic];
+    [noteDic setValue:cityName forKey:@"cityName"];
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"chooseCity" object:nil userInfo:dic];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"chooseCity" object:nil userInfo:noteDic];
     
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
