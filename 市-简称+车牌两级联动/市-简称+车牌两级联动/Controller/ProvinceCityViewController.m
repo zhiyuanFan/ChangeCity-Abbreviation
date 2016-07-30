@@ -34,7 +34,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.title = @"省份";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

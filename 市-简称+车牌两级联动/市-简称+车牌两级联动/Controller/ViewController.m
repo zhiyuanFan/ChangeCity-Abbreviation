@@ -34,6 +34,7 @@ static CGFloat const rgbColor = 239 / 255.0;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"省市-简称";
     self.cityView.layer.cornerRadius = 10;
     self.numView.layer.cornerRadius = 10;
     self.view.backgroundColor = [UIColor colorWithRed:rgbColor green:rgbColor blue:rgbColor alpha:1.0];

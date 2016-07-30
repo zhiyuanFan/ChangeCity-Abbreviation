@@ -31,7 +31,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.title = @"城市";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

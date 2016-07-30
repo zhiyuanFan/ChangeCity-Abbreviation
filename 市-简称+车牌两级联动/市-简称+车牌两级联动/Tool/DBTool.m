@@ -31,19 +31,27 @@ static FMDatabaseQueue *_queue;
             } else {
                 [db beginTransaction];
                 BOOL isRollback = NO;
-                @try {
-                    NSArray *sqlArray = [self getInsertSql];
-                    [sqlArray enumerateObjectsUsingBlock:^(NSString *insertSql, NSUInteger idx, BOOL * _Nonnull stop) {
-                        if (![insertSql isEqualToString:@""]) {
-                            [db executeUpdate:insertSql];
+                //防止重复插入
+                NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                BOOL isInserted = [defaults boolForKey:@"isInserted"];
+                if (!isInserted) {
+                    @try {
+                        NSArray *sqlArray = [self getInsertSql];
+                        [sqlArray enumerateObjectsUsingBlock:^(NSString *insertSql, NSUInteger idx, BOOL * _Nonnull stop) {
+                            if (![insertSql isEqualToString:@""]) {
+                                [db executeUpdate:insertSql];
+                            }
+                        }];
+                    } @catch (NSException *exception) {
+                        isRollback = YES;
+                        [db rollback];
+                        [defaults setBool:NO forKey:@"isInserted"];
+                    } @finally {
+                        if (!isRollback) {
+                            [db commit];
+                            [defaults setBool:YES forKey:@"isInserted"];
+                            [defaults synchronize];
                         }
-                    }];
-                } @catch (NSException *exception) {
-                    isRollback = YES;
-                    [db rollback];
-                } @finally {
-                    if (!isRollback) {
-                        [db commit];
                     }
                 }
                 
