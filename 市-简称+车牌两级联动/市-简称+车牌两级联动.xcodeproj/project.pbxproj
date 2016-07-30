@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B323CB435FFAA4AD615F87CF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F23586C15FA634565F2B394F /* libPods.a */; };
-		DAA6C1331CA4412100B575AC /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA6C12E1CA4412100B575AC /* CityViewController.m */; settings = {ASSET_TAGS = (); }; };
-		DAA6C1341CA4412100B575AC /* ProvinceCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA6C1301CA4412100B575AC /* ProvinceCityViewController.m */; settings = {ASSET_TAGS = (); }; };
-		DAA6C1351CA4412100B575AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA6C1321CA4412100B575AC /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
-		DAA6C1391CA4412C00B575AC /* ProvinceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA6C1381CA4412C00B575AC /* ProvinceItem.m */; settings = {ASSET_TAGS = (); }; };
-		DAA6C13D1CA4413700B575AC /* DBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA6C13C1CA4413700B575AC /* DBTool.m */; settings = {ASSET_TAGS = (); }; };
+		986391EB56614397332206B1 /* libPods-市-简称+车牌两级联动.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 155511A3B7D77CACC586587A /* libPods-市-简称+车牌两级联动.a */; };
+		DAA6C1331CA4412100B575AC /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA6C12E1CA4412100B575AC /* CityViewController.m */; };
+		DAA6C1341CA4412100B575AC /* ProvinceCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA6C1301CA4412100B575AC /* ProvinceCityViewController.m */; };
+		DAA6C1351CA4412100B575AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA6C1321CA4412100B575AC /* ViewController.m */; };
+		DAA6C1391CA4412C00B575AC /* ProvinceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA6C1381CA4412C00B575AC /* ProvinceItem.m */; };
+		DAA6C13D1CA4413700B575AC /* DBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA6C13C1CA4413700B575AC /* DBTool.m */; };
 		DAC037011CA3CA3500AC6A6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC037001CA3CA3500AC6A6B /* main.m */; };
 		DAC037041CA3CA3500AC6A6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC037031CA3CA3500AC6A6B /* AppDelegate.m */; };
 		DAC0370A1CA3CA3500AC6A6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC037081CA3CA3500AC6A6B /* Main.storyboard */; };
@@ -21,8 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2949B5B79E75A27D81A444A1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		74A1B8A23E2FA0AA234C3FC2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		155511A3B7D77CACC586587A /* libPods-市-简称+车牌两级联动.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-市-简称+车牌两级联动.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B93F5862901CF3491FD0C22 /* Pods-市-简称+车牌两级联动.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-市-简称+车牌两级联动.debug.xcconfig"; path = "Pods/Target Support Files/Pods-市-简称+车牌两级联动/Pods-市-简称+车牌两级联动.debug.xcconfig"; sourceTree = "<group>"; };
 		DAA6C12D1CA4412100B575AC /* CityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityViewController.h; sourceTree = "<group>"; };
 		DAA6C12E1CA4412100B575AC /* CityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityViewController.m; sourceTree = "<group>"; };
 		DAA6C12F1CA4412100B575AC /* ProvinceCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvinceCityViewController.h; sourceTree = "<group>"; };
@@ -41,7 +41,7 @@
 		DAC0370B1CA3CA3500AC6A6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAC0370E1CA3CA3500AC6A6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAC037101CA3CA3500AC6A6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F23586C15FA634565F2B394F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B1F5863F2D98CB6340B2D7 /* Pods-市-简称+车牌两级联动.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-市-简称+车牌两级联动.release.xcconfig"; path = "Pods/Target Support Files/Pods-市-简称+车牌两级联动/Pods-市-简称+车牌两级联动.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,28 +49,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B323CB435FFAA4AD615F87CF /* libPods.a in Frameworks */,
+				986391EB56614397332206B1 /* libPods-市-简称+车牌两级联动.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A090C86818C81C76F05042F1 /* Frameworks */ = {
+		2B839DE667EDFD549528C35C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F23586C15FA634565F2B394F /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B32096B2213ED5827587AC5E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				74A1B8A23E2FA0AA234C3FC2 /* Pods.debug.xcconfig */,
-				2949B5B79E75A27D81A444A1 /* Pods.release.xcconfig */,
+				8B93F5862901CF3491FD0C22 /* Pods-市-简称+车牌两级联动.debug.xcconfig */,
+				E4B1F5863F2D98CB6340B2D7 /* Pods-市-简称+车牌两级联动.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE2D697EF303BE346424169E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				155511A3B7D77CACC586587A /* libPods-市-简称+车牌两级联动.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		DAA6C12C1CA4412100B575AC /* Controller */ = {
@@ -109,8 +109,8 @@
 			children = (
 				DAC036FE1CA3CA3500AC6A6B /* 市-简称+车牌两级联动 */,
 				DAC036FD1CA3CA3500AC6A6B /* Products */,
-				B32096B2213ED5827587AC5E /* Pods */,
-				A090C86818C81C76F05042F1 /* Frameworks */,
+				2B839DE667EDFD549528C35C /* Pods */,
+				CE2D697EF303BE346424169E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,12 +154,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAC037131CA3CA3500AC6A6B /* Build configuration list for PBXNativeTarget "市-简称+车牌两级联动" */;
 			buildPhases = (
-				C4DA343FFF031D3FFE838360 /* Check Pods Manifest.lock */,
+				3EDB8C3C11CCCB0B09A59876 /* [CP] Check Pods Manifest.lock */,
 				DAC036F81CA3CA3500AC6A6B /* Sources */,
 				DAC036F91CA3CA3500AC6A6B /* Frameworks */,
 				DAC036FA1CA3CA3500AC6A6B /* Resources */,
-				AC1669807117E8004111B671 /* Embed Pods Frameworks */,
-				A724058C32F7BB965094FE12 /* Copy Pods Resources */,
+				0EFC17EF416FBA8DABBC13E5 /* [CP] Embed Pods Frameworks */,
+				466F0F416C35A0748B51E05E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,49 +217,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A724058C32F7BB965094FE12 /* Copy Pods Resources */ = {
+		0EFC17EF416FBA8DABBC13E5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-市-简称+车牌两级联动/Pods-市-简称+车牌两级联动-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AC1669807117E8004111B671 /* Embed Pods Frameworks */ = {
+		3EDB8C3C11CCCB0B09A59876 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C4DA343FFF031D3FFE838360 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		466F0F416C35A0748B51E05E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-市-简称+车牌两级联动/Pods-市-简称+车牌两级联动-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -383,7 +383,7 @@
 		};
 		DAC037141CA3CA3500AC6A6B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74A1B8A23E2FA0AA234C3FC2 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 8B93F5862901CF3491FD0C22 /* Pods-市-简称+车牌两级联动.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "市-简称+车牌两级联动/Info.plist";
@@ -395,7 +395,7 @@
 		};
 		DAC037151CA3CA3500AC6A6B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2949B5B79E75A27D81A444A1 /* Pods.release.xcconfig */;
+			baseConfigurationReference = E4B1F5863F2D98CB6340B2D7 /* Pods-市-简称+车牌两级联动.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "市-简称+车牌两级联动/Info.plist";
