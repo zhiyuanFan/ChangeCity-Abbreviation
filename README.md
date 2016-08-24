@@ -3,4 +3,4 @@
 
 [详细SQL语句在这](http://www.jianshu.com/p/a5ec5c715f4d)
 
-![image](https://github.com/zhiyuanFan/ChangeCity-Abbreviation/raw/master/test.gif)
+![image](https://github.com/zhiyuanFan/ChangeCity-Abbreviation/raw/master/Abbreviation.gif)
